@@ -9,21 +9,19 @@
       padding-bottom: {{ section.settings.padding_bottom}}px;
     }
 {%- endstyle -%}
-<link rel="stylesheet" href="/assets/app.css" type="text/css>
+<link rel="stylesheet" href="/assets/app.css" type="text/css">
 <div class="section-{{ section.id }}-padding">
-  <div>
+  <div class="w-20 h-15">
     {% if section.settings.video_checkbox == true %}
       <video autoplay muted="true" loop>
         <source src="{{section.settings.video_url}}" type="video/mp4">
       </video>
     {% endif %}
   </div>
-  <div>
-    <h1 class="text-center text-9xl text-orange-800">lololol</h1>
-  </div>
-
 </div>
-
+<div>
+  <h1 class="text-center text-orange-600">lol</h1>
+</div>
 {% schema %}
   {
     "name": "Video Image Slider",
